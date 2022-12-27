@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    image: whyour/qinglong:latest
+    volumes:
+      - /mnt/usb-8492dbb2/mi_docker/qinglong/data:/ql/data
+    ports:
+      - "5700:5700"
+    restart: unless-stopped
